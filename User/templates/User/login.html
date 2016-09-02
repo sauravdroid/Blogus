@@ -1,0 +1,49 @@
+{% extends 'User/base.html' %}
+{% load staticfiles %}
+{% block style_js %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'User/css/login_style.css' %}">
+{% endblock %}
+{% block body %}
+    <div id="page">
+        <h1 class="page-title">BLOGUS</h1>
+        <h3 class="page-description">An awesome site to share your
+            thoughts and ideas with the
+            rest of the world</h3>
+        <button class="register-button">Register</button>
+        <div class="more-container">
+            <ul class="more-container-list">
+                <li>
+                    <div class="mcl-div">
+                        <h3>205</h3>
+                        <h5>Peoples</h5>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="mcl-div">
+                        <h3>1400</h3>
+                        <h5>Stories</h5>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="mcl-div">
+                        <h3>20,000</h3>
+                        <h5>Likes</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="login-half">
+            <div class="login-box">
+                <h3 class="login-title">Login</h3>
+                <input type="text" id="username" class="input-text" placeholder="Username" autocomplete="off">
+                <input type="password" id="password" class="input-text" placeholder="Password" autocomplete="off">
+            </div>
+            <button class="login-button">Login</button>
+        </div>
+
+    </div>
+{% endblock %}

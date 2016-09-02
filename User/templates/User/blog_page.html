@@ -1,0 +1,148 @@
+{% extends 'User/base.html' %}
+{% load staticfiles %}
+{% block style_js %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'User/css/style.css' %}">
+{% endblock %}
+{% block body %}
+    <div id="page">
+        <div class="header">
+            <h1>An ode to the Moon</h1>
+            <div class="bottom-bar">
+                <img src="{% static 'User/pics/dancounsell.jpg' %}" alt="" class="clip-circle">
+                <h3 class="profile-name-top">Sara Williams</h3>
+                <a href="#"><i class="material-icons more">more_horiz</i></a>
+                <a href="#"><i class="material-icons share">share</i></a>
+                <a href="#"><i class="material-icons favorite">favorite</i></a>
+                <h3 class="like-no">24</h3>
+            </div>
+        </div>
+        <div class="text-container">
+            <h3>
+                In life, I know 2 things to be true:
+                Crunchy peanut butter is better than creamy.
+                I will be bored of what I am doing now in 6 months.
+                I meet many people who say “I don’t like to work,” or (worse) “I’m not good at anything.”
+                Many of the Internet gurus seem to assume there is one consuming passion out there, that you need only
+                reach out your hand and find what you were meant to do for the rest of your life. At that point, all
+                feelings of insufficiency will fade. The butterflies descend from above as you embrace your one true
+                purpose for the next 30 years of your life.
+                Consider this: you may not have an ideal job. So where do you begin your search?
+            </h3>
+        </div>
+        <ul class="tags-container">
+            <li>
+                <div class="tag">
+                    <h3>Programming</h3>
+                </div>
+            </li>
+            <li>
+                <div class="tag">
+                    <h3>Tech</h3>
+                </div>
+            </li>
+            <li>
+                <div class="tag">
+                    <h3>Life Lessons</h3>
+                </div>
+            </li>
+            <li>
+                <div class="tag">
+                    <h3>Web Development</h3>
+                </div>
+            </li>
+            <li>
+                <div class="tag">
+                    <h3>Startup</h3>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="suggestion-container">
+            <li>
+                <div class="suggestion-container-div">
+                    <img class="card-img" src="{% static 'User/pics/photo-1451188214936-ec16af5ca155.jpeg' %}">
+                    <h3>The 3 stages of life and failure in work</h3>
+                    <img class="card-profile-img" src="{% static 'User/pics/dancounsell.jpg' %}">
+                    <h4 class="profile-name">James Clear</h4>
+                    <h5 class="suggestion-date">12 Jul 2016</h5>
+                    <i class="material-icons likes">favorite_border</i>
+                    <h5 class="suggestion-likes-count">74</h5>
+                </div>
+            </li>
+
+            <li>
+                <div class="suggestion-container-div">
+                    <img class="card-img" src="{% static 'User/pics/photo-1451188214936-ec16af5ca155.jpeg' %}">
+                    <h3>The 3 stages of life and failure in work</h3>
+                    <img class="card-profile-img" src="{% static 'User/pics/dancounsell.jpg' %}">
+                    <h4 class="profile-name">James Clear</h4>
+                    <h5 class="suggestion-date">12 Jul 2016</h5>
+                    <i class="material-icons likes">favorite_border</i>
+                    <h5 class="suggestion-likes-count">74</h5>
+                </div>
+            </li>
+        </ul>
+
+        <div class="response-box">
+            <h4>Responses</h4>
+            <button class="response-textarea">
+                <img src="{% static 'User/pics/dancounsell.jpg' %}" class="response-profile-img">
+                <h3 class="response-write-response">Write a response...</h3>
+            </button>
+        </div>
+        <ul class="comments-container">
+            <li>
+                <div class="comment">
+                    <div class="upper-content">
+                        <img class="comment-profile-img" src="{% static 'User/pics/dancounsell.jpg' %}">
+                        <h3 class="comment-author-name">Casey McKinnon</h3>
+                        <h3 class="comment-date">Aug 25 . 2016</h3>
+                    </div>
+                    <div class="text-content">
+                        <p>
+                            Brandon — great post. As your boss at the time, I want you to look at it from my
+                            perspective. People who make mistakes, and learn from them, are amongst the most valuable
+                            employees any company can have. No manager worth their salt would ever fire someone for
+                            making a bad product decision when they know deep down that the PM is empathetic,
+                            thoughtful, and as smart as you are. Humans make mistakes, and go on to accomplish
+                            incredible things — and its the mistakes that force people to grow and become better. I’m
+                            really proud to ever have worked with you, keep on keeping on!
+                        </p>
+                    </div>
+                    <div class="lower-content">
+                        <i class="material-icons comment-likes">favorite_border</i>
+                        <h5 class="comment-likes-count">24</h5>
+                    </div>
+                </div>
+            </li>
+             <li>
+                <div class="comment">
+                    <div class="upper-content">
+                        <img class="comment-profile-img" src="{% static 'User/pics/dancounsell.jpg' %}">
+                        <h3 class="comment-author-name">Casey McKinnon</h3>
+                        <h3 class="comment-date">Aug 25 . 2016</h3>
+                    </div>
+                    <div class="text-content">
+                        <p>
+                            Brandon — great post. As your boss at the time, I want you to look at it from my
+                            perspective. People who make mistakes, and learn from them, are amongst the most valuable
+                            employees any company can have. No manager worth their salt would ever fire someone for
+                            making a bad product decision when they know deep down that the PM is empathetic,
+                            thoughtful, and as smart as you are. Humans make mistakes, and go on to accomplish
+                            incredible things — and its the mistakes that force people to grow and become better. I’m
+                            really proud to ever have worked with you, keep on keeping on!
+                        </p>
+                    </div>
+                    <div class="lower-content">
+                        <i class="material-icons comment-likes">favorite_border</i>
+                        <h5 class="comment-likes-count">24</h5>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div style="height: 200px;"></div>
+    </div>
+
+{% endblock %}

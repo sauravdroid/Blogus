@@ -1,0 +1,114 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300';
+.post {
+    padding-left: 10px;
+    width: 480px;
+    height: 540px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+    border: 0.4px solid #f9f9f9;
+    position: relative;
+    margin-bottom: 35px;
+}
+#page{
+    width: 100%;
+    overflow: hidden;
+}
+.post-profile-img {
+    width: 35px;
+    position: absolute;
+    height: 35px;
+    top:45px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+.tag-icon {
+    font-size: 20px;
+    transform: rotate(90deg);
+    position: absolute;
+    top:10px;
+    left:15px;
+    color: rgba(143, 143, 143, 0.7);
+}
+.tag-text{
+    font-family:'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    position: absolute;
+    left: 40px;
+    top:3px;
+    color:#8F8F8F;
+}
+
+.post-profile-name{
+    color:#11B075;
+    font-size: 13px;
+    font-family: 'Roboto',sans-serif;
+    top:35px;
+    left: 60px;
+    position: absolute;
+}
+.post-date{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color:rgba(0,0,0,0.6);
+    top:54px;
+    position: absolute;
+    left:60px;
+}
+.post-image-container{
+    position: absolute;
+    width: 430px;
+    height:200px;
+    background: url("../pics/photo-1451188214936-ec16af5ca155.jpeg") no-repeat center top / cover;
+    border-radius: 3px;
+    top:110px;
+    left:15px;
+}
+
+.post-description{
+    position: absolute;
+    top:310px;
+    left: 15px;
+    font-family: "Lucida Grande";
+    line-height: 1.4em;
+    font-size: 18px;
+    color:rgba(0,0,0,0.8);
+}
+.post-small-description{
+    font-family: 'Georgia',sans-serif;
+    font-size: 14px;
+    color:rgba(0,0,0,0.7);
+    position: absolute;
+    top:380px;
+    left:15px;
+}
+.btn-read-more{
+    font-family: 'Roboto',sans-serif;
+    border: none;
+    font-size: 13px;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    bottom: 70px;
+    left:10px;
+    color: rgba(139,139,139,0.8);
+}
+.likes{
+    position: absolute;
+    bottom: 32px;
+    left: 15px;
+    color:#1c9963;
+}
+.like-no{
+    position: absolute;
+    font-family: 'Roboto',sans-serif;
+    color: rgba(139,139,139,0.8);
+    font-size: 15px;
+    bottom: 20px;
+    left: 45px;
+}
+.post-container{
+    position: relative;
+    left:27%;
+}
