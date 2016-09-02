@@ -18,5 +18,5 @@ def all_posts(request):
     return render(request, 'User/posts.html', {'title': 'All Post'})
 
 
-def dummy(request):
+def dummy_response(request):
     return HttpResponse("This is a dummy response")
