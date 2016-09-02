@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 
 def blog_page(request):
@@ -15,3 +16,7 @@ def login(request):
 
 def all_posts(request):
     return render(request, 'User/posts.html', {'title': 'All Post'})
+
+
+def dummy(request):
+    return HttpResponse("This is a dummy response")
