@@ -18,7 +18,7 @@ body{
 
 .search{
     position: absolute;
-    right: 80px;
+    right: 130px;
     font-size: 20px;
     top:20px;
     color:#fff;
@@ -28,8 +28,9 @@ body{
     font-size: 16px;
     color:#11B075;
     font-weight: 300;
-    position: absolute; right: 120px;
-    top:5px;
+    position: absolute; right: 180px;
+    top:22px;
+    text-decoration: none;
 }
 .blogus{
     font-family: 'Courier';
@@ -38,4 +39,11 @@ body{
     top:-20px;
     left: 10px;
     color:#fff;
+}
+.settings{
+    color:#fff;
+    font-size: 20px;
+    position: absolute;
+    right:80px;
+    top:20px;
 }
