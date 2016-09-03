@@ -8,42 +8,83 @@
 {% block body %}
     <div id="page">
         <h1 class="page-title">BLOGUS</h1>
-        <h3 class="page-description">An awesome site to share your
-            thoughts and ideas with the
-            rest of the world</h3>
-        <button class="register-button">Register</button>
-        <div class="more-container">
-            <ul class="more-container-list">
-                <li>
-                    <div class="mcl-div">
-                        <h3>205</h3>
-                        <h5>Peoples</h5>
-                    </div>
-                </li>
+        <div class="left-part">
+            <h3 class="page-description">An awesome site to share your
+                thoughts and ideas with the
+                rest of the world</h3>
+            <button class="register-button" id="register_show">Register</button>
+            <div class="more-container">
+                <ul class="more-container-list">
+                    <li>
+                        <div class="mcl-div">
+                            <h3>205</h3>
+                            <h5>Peoples</h5>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="mcl-div">
-                        <h3>1400</h3>
-                        <h5>Stories</h5>
-                    </div>
-                </li>
+                    <li>
+                        <div class="mcl-div">
+                            <h3>1400</h3>
+                            <h5>Stories</h5>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="mcl-div">
-                        <h3>20,000</h3>
-                        <h5>Likes</h5>
-                    </div>
-                </li>
-            </ul>
+                    <li>
+                        <div class="mcl-div">
+                            <h3>20,000</h3>
+                            <h5>Likes</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div id="login-half">
             <div class="login-box">
-                <h3 class="login-title">Login</h3>
-                <input type="text" id="username" class="input-text" placeholder="Username" autocomplete="off">
-                <input type="password" id="password" class="input-text" placeholder="Password" autocomplete="off">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <h3 class="login-title">Login</h3>
+                    <input name="username" type="text" id="username" class="input-text" placeholder="Username" autocomplete="off">
+                    <input name="password" type="password" id="password" class="input-text" placeholder="Password" autocomplete="off">
+                    <button type="submit" class="login-button">Login</button>
+                </form>
             </div>
-            <button class="login-button">Login</button>
+
+            <div class="register-box">
+                <h3 class="register-box-header">Register</h3>
+                <form method="post" action="{% url 'user:register' %}">
+                    {% csrf_token %}
+                    <div>
+                        <!--<label for="id_username">Username</label>-->
+                        <input type="text" name="username" id="id_username" placeholder="Username"
+                               class="register-input">
+                    </div>
+                    <div>
+                        <!--<label for="id_password">Password</label>-->
+                        <input type="password" name="password" id="id_password" placeholder="Password"
+                               class="register-input">
+                    </div>
+                    <div>
+                        <!--<label for="id_firstname">Firstname</label>-->
+                        <input type="text" name="first_name" id="id_firstname" placeholder="Firstname"
+                               class="register-input">
+                    </div>
+                    <div>
+                        <!--<label for="id_lastname">Lastname</label>-->
+                        <input type="text" name="last_name" id="id_lastname" placeholder="Lastname"
+                               class="register-input">
+                    </div>
+                    <div>
+                        <!--<label for="id_email">Email</label>-->
+                        <input type="text" name="email" id="id_email" placeholder="Email" class="register-input">
+                    </div>
+                    <button type="submit" class="register-box-button">Register</button>
+                </form>
+            </div>
         </div>
 
     </div>
+{% endblock %}
+{% block body_js %}
+    <script type="text/javascript" src="{% static 'User/js/jquery-3.1.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'User/js/login.js' %}"></script>
 {% endblock %}

@@ -1,9 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300,400';
-body{
+
+body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
-#page{
+
+#page {
+
     display: block;
     width: 100%;
     height: 726px;
@@ -11,122 +15,204 @@ body{
     url("../pics/photo-1451188214936-ec16af5ca155.jpeg") no-repeat center top / cover;
     z-index: 1;
 }
-#login-half{
+
+#login-half {
     position: relative;
     z-index: 2;
     width: 50%;
     height: 726px;
     left: 50%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
-.page-title{
+
+.page-title {
     position: absolute;
-    color:#fff;
+    color: #fff;
     font-size: 65px;
     font-family: Courier;
-    top:15%;
-    left:14%;
+    top: 15%;
+    left: 14%;
+    transition: all 0.4s ease-in-out;
 }
-.page-description{
-    width:40%;
-    color:#fff;
+
+.page-description {
+    width: 40%;
+    color: #fff;
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     text-align: center;
-    top:30%;
+    top: 30%;
     left: 5%;
 }
-.register-button{
+
+.register-button {
     position: absolute;
     padding: 8px 15px;
-    color:#fff;
+    color: #fff;
     border: none;
-    outline:none;
-    border:2px solid #fff;
+    outline: none;
+    border: 2px solid #fff;
     border-radius: 40px;
     background: transparent;
-    top:48%;
+    top: 48%;
     left: 20%;
+    transition: all 0.4s ease;
 }
-.more-container{
+
+.more-container {
     position: absolute;
-    top:55%;
+    top: 55%;
     left: 6%;
     width: 500px;
 }
-.mcl-div h3,h5{
-    color:#fff;
+
+.mcl-div h3, h5 {
+    color: #fff;
 }
-.mcl-div{
+
+.mcl-div {
     text-align: center;
 }
-.mcl-div h3{
-    font-family: 'Roboto',sans-serif;
+
+.mcl-div h3 {
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 35px;
 }
-.mcl-div h5{
-    font-family: 'Roboto',sans-serif;
+
+.mcl-div h5 {
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 20px;
     position: relative;
-    top:-30px;
+    top: -30px;
 }
-ul{
+
+ul {
     list-style: none;
 }
-li{
+
+li {
     float: left;
     margin-right: 60px;
 }
-.login-box{
+
+.login-box {
     width: 421px;
     height: 360px;
     border-radius: 4px;
     border: 2px solid #fff;
     position: relative;
-    top:27%;
+    top: 27%;
     left: 18%;
+    transition: all 0.4s ease-in-out;
 }
-.input-text{
-    color:#fff;
+
+.input-text {
+    color: #fff;
     font-size: 20px;
     border: none;
     background: none;
     outline: none;
     border-bottom: 2px solid #fff;
     position: absolute;
-    top:30%;
-    left:15%;
+    top: 30%;
+    left: 15%;
 }
-.input-text::-webkit-input-placeholder{
+
+.input-text::-webkit-input-placeholder {
     color: #fff;
 }
-#password{
-    top:190px;
+
+#password {
+    top: 190px;
 }
-.login-button{
+
+.login-button {
     position: absolute;
     padding: 8px 15px;
     width: 80px;
-    color:#fff;
+    color: #fff;
     border: none;
-    outline:none;
-    border:2px solid #fff;
+    outline: none;
+    border: 2px solid #fff;
     border-radius: 40px;
     background: transparent;
-    top:68%;
-    top:68%;
-    left: 65%;
+    top: 78%;
+    left: 70%;
+    transition: all 0.4s ease;
 }
-.login-title{
-    color:#fff;
-    font-family: 'Roboto',sans-serif;
+
+.login-title {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
     font-size: 32px;
     position: absolute;
     left: 40px;
     font-weight: 300;
-    top:-10px;
-
+    top: -10px;
 }
+
+.register-input {
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.register-input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.register-box {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 22%;
+    left: 17%;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0, 900px, 0);
+}
+
+.register-box-button {
+
+    padding: 8px 15px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    background: transparent;
+    position: relative;
+    float: right;
+    right: 35px;
+    transition: all 0.4s ease;
+}
+
+.register-box-button:hover, .login-button:hover, .register-button:hover {
+    transform: scale(1.12, 1.12);
+    border-color: #12D58C;
+    color: #11B075;
+}
+
+.register-box-header {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    position: relative;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+

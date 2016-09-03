@@ -1,0 +1,38 @@
+{% extends 'User/base.html' %}
+{% load staticfiles %}
+{% block style_js %}
+    <link rel="stylesheet" href="{% static 'User/css/login_style.css' %}">
+{% endblock %}
+{% block body %}
+    <div id="page" style="background: #000;">
+        <div class="register-box">
+            <h3 class="register-box-header">Register</h3>
+            <form method="post" action="">
+                {% csrf_token %}
+                <div>
+                    <!--<label for="id_username">Username</label>-->
+                    <input type="text" name="username" id="id_username" placeholder="Username" class="register-input">
+                </div>
+                <div>
+                    <!--<label for="id_password">Password</label>-->
+                    <input type="password" name="password" id="id_password" placeholder="Password"
+                           class="register-input">
+                </div>
+                <div>
+                    <!--<label for="id_firstname">Firstname</label>-->
+                    <input type="text" name="first_name" id="id_firstname" placeholder="Firstname"
+                           class="register-input">
+                </div>
+                <div>
+                    <!--<label for="id_lastname">Lastname</label>-->
+                    <input type="text" name="last_name" id="id_lastname" placeholder="Lastname" class="register-input">
+                </div>
+                <div>
+                    <!--<label for="id_email">Email</label>-->
+                    <input type="text" name="email" id="id_email" placeholder="Email" class="register-input">
+                </div>
+                <button type="submit" class="register-box-button">Register</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
