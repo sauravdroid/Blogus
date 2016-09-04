@@ -1,0 +1,7 @@
+{% extends 'Post/base.html' %}
+{% block body %}
+    {% for post in posts %}
+        <h3>{{ post.title }}</h3>
+        <img src="{{ post.post_hero_pic.url }}">
+    {% endfor %}
+{% endblock %}

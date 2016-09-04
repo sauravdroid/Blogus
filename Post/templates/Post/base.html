@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Post/css/base_style.css' %}">
+    {% block style_js %}{% endblock %}
+</head>
+<body>
+{% if not bar %}
+    <div class="top-bar">
+        <h3 class="blogus">Blogus</h3>
+        <img src="{% static 'User/pics/dancounsell.jpg' %}" class="main-profile-image">
+        <i class="material-icons search">search</i>
+        <a href="#"><i class="material-icons settings">settings</i></a>
+        <a href="{% url 'user:blog_page' %}" class="write-story">Write a story</a>
+    </div>
+{% endif %}
+
+<div style="position: relative;top:0px;">
+    {% block body %}{% endblock %}
+</div>
+
+{% block body_js %}{% endblock %}
+</body>
+</html>

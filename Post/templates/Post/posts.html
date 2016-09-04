@@ -1,0 +1,64 @@
+{% extends 'User/base.html' %}
+{% load staticfiles %}
+{% block style_js %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Post/css/all_posts.css' %}">
+{% endblock %}
+{% block body %}
+    <div id="page">
+        <div class="post-container">
+            <ul style="list-style: none">
+                <li>
+                    <div class="post">
+                        <i class="material-icons tag-icon">local_offer</i>
+                        <h3 class="tag-text">Careers</h3>
+                        <img class="post-profile-img" src="{% static 'Post/pics/dancounsell.jpg' %}">
+                        <h3 class="post-profile-name">Gil Kazimov</h3>
+                        <h3 class="post-date">Aug 9 . 6 min read</h3>
+                        <div class="post-image-container"></div>
+                        <h3 class="post-description">
+                            Here’s the Problem with New York’s Young
+                            Professionals
+                        </h3>
+                        <h3 class="post-small-description">
+                            This past June, I left the company I helped start and helped growover six
+                            years, from pre-launch to a million…
+
+                        </h3>
+                        <i class="material-icons likes">favorite_border</i>
+                        <h3 class="like-no">24</h3>
+                        <button class="btn-read-more">Read more...</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="post">
+                        <i class="material-icons tag-icon">local_offer</i>
+                        <h3 class="tag-text">Careers</h3>
+                        <img class="post-profile-img" src="{% static 'Post/pics/dancounsell.jpg' %}">
+                        <h3 class="post-profile-name">Gil Kazimov</h3>
+                        <h3 class="post-date">Aug 9 . 6 min read</h3>
+                        <div class="post-image-container"></div>
+                        <h3 class="post-description">
+                            Here’s the Problem with New York’s Young
+                            Professionals
+                        </h3>
+                        <h3 class="post-small-description">
+                            This past June, I left the company I helped start and helped growover six
+                            years, from pre-launch to a million…
+
+                        </h3>
+                        <i class="material-icons likes">favorite_border</i>
+                        <h3 class="like-no">24</h3>
+                        <button class="btn-read-more">Read more...</button>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+{% endblock %}
+{% block body_js %}
+    <script type="text/javascript" src="{% static 'Post/js/jquery-3.1.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Post/js/all_posts.js' %}"></script>
+{% endblock %}

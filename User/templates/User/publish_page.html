@@ -7,10 +7,12 @@
 {% endblock %}
 {% block body %}
     <div id="page">
-        <input type="text" class="title-text" placeholder="Title">
-        <textarea class="main-content" placeholder="Tell your story..."></textarea>
-        <button class="publish-button">Publish</button>
-        <button class="publish-button upload">Upload Pic</button>
+        <form action="" method="post">
+            <input name="title" type="text" class="title-text" placeholder="Title">
+            <textarea name="body" class="main-content" placeholder="Tell your story..."></textarea>
+            <button class="publish-button">Publish</button>
+            <button class="publish-button upload">Upload Pic</button>
+        </form>
         <div style="height: 100px;"></div>
     </div>
 {% endblock %}

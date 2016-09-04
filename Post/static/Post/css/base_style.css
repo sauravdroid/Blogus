@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.top-bar{
+    position: relative;
+    background-color: #0D47A1;
+    height: 60px;
+}
+.main-profile-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+
+.search{
+    position: absolute;
+    right: 130px;
+    font-size: 20px;
+    top:20px;
+    color:#fff;
+}
+.write-story{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    color:#11B075;
+    font-weight: 300;
+    position: absolute; right: 180px;
+    top:22px;
+    text-decoration: none;
+}
+.blogus{
+    font-family: 'Courier';
+    font-size: 30px;
+    position: absolute;
+    top:-20px;
+    left: 10px;
+    color:#fff;
+}
+.settings{
+    color:#fff;
+    font-size: 20px;
+    position: absolute;
+    right:80px;
+    top:20px;
+}

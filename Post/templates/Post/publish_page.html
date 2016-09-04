@@ -1,0 +1,25 @@
+{% extends 'User/base.html' %}
+{% load staticfiles %}
+{% block style_js %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Post/css/publish_style.css' %}">
+{% endblock %}
+{% block body %}
+    <div id="page">
+        <form action="" method="post" id="publish-post-form" enctype="multipart/form-data">
+            <input name="title" type="text" class="title-text" placeholder="Title" autocomplete="off">
+            <textarea name="body" class="main-content" placeholder="Tell your story..."></textarea>
+            <button class="publish-button" type="submit">Publish</button>
+            <label for="file_upload" class="label">Upload Pic</label>
+            <input type="file" class="publish-button upload" id="file_upload"/>
+        </form>
+        <div style="height: 100px;"></div>
+    </div>
+{% endblock %}
+{% block body_js %}
+    <script type="text/javascript" src="{% static 'Post/js/jquery-3.1.0.min.js' %}"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script type="text/javascript" src="{% static 'Post/js/csrf.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Post/js/publish.js' %}"></script>
+{% endblock %}
